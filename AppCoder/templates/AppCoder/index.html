@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hola mnuodasd
+</h1>
+    <p style= "color: #ca0101">
+        Hola {{Nombre}}, {{Apellido}}, como estas?
+    </p>
+<h2>NOtas de alumnos</h2>
+    <p>{% for nota in notas %}
+        {%if nota > 5 %}
+            <p style="color:green"> {{nota}} </p>
+         {% endif %}
+        {% endfor %}
+        <br>
+    </p>
+</body>
+</html>
